@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+
+<web-app version="3.1" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+  http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns="http://xmlns.jcp.org/xml/ns/javaee">
+   
+   
+   <servlet>
+     <servlet-name>Add</servlet-name>
+     <servlet-class>com.seller.addServlet</servlet-class>
+   
+   </servlet>
+   
+   <servlet-mapping>
+       <servlet-name>Add</servlet-name>
+       <url-pattern>/add</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+     <servlet-name>Update</servlet-name>
+     <servlet-class>com.seller.UpdateServlet</servlet-class>
+   
+   </servlet>
+   
+    <servlet-mapping>
+       <servlet-name>Update</servlet-name>
+       <url-pattern>/update</url-pattern>
+   </servlet-mapping>
+   
+    <servlet>
+     <servlet-name>Delete</servlet-name>
+     <servlet-class>com.seller.DeleteServlet</servlet-class>
+   
+   </servlet>
+   
+   
+     <servlet-mapping>
+       <servlet-name>Delete</servlet-name>
+       <url-pattern>/delete</url-pattern>
+   </servlet-mapping>
+   
+</web-app>
